@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Visualization of Your selected File</h1>
+        <form method="POST">
+            <label for="chart_type">Select Chart Type:</label>
+            <select name="chart_type" id="chart_type">
+                <option value="line" {% if chart_type == 'line' %}selected{% endif %}>Line</option>
+                <option value="bar" {% if chart_type == 'bar' %}selected{% endif %}>Bar</option>
+                <option value="histogram" {% if chart_type == 'histogram' %}selected{% endif %}>Histogram</option>
+            </select>
+            <button type="submit">Generate Chart</button>
+        </form>
+
+        {% if chart_path %}
+        <div class="chart">
+            <img src="{{ chart_path }}" alt="Generated Chart">
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
