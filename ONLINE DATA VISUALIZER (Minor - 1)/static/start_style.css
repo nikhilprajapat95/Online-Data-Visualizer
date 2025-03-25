@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/bg/Free\ Vector\ _\ Blue\ diagonal\ square\ grid\ background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+
+    /* Flexbox for centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.start-container {
+    width: 70%;
+    max-width: 800px; /* Optional: limit the maximum width */
+    height: auto;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center; /* Ensures content inside is centered */
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.container {
+    width: 1000px;
+    height: 850px;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, select, button {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+select {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    background: #ecf0f1;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1f618d;
+}
+
+.chart {
+    margin-top: 20px;
+    padding: 0;
+    height: 750px;
+    width: 750px;
+    text-align: center;
+    align-items: center;
+}
+
+.chart image{
+    padding: 1px 1px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #34495e;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+a {
+    text-align: center;
+    align-items: center;
+    margin-left: 30px;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+a:hover {
+background-color: #1f618d;
+}
+.image-gallery{
+    margin-left: 20px;
+}
